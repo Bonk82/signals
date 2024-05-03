@@ -1,0 +1,7 @@
+<h1>Listado de usuarios</h1>
+<ul>
+  @for (u of servicio.usuarios(); track $index) {
+  <li>{{$index}}- {{u.name}}</li>
+  }
+</ul>
+<router-outlet/>
